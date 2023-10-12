@@ -7,7 +7,6 @@
     padding-inline: 1.5rem;
     border-bottom: 1px solid var(--cor-laranja);
     background-color: var(--cor-acizentada);
-    margin-bottom: 100px;
 }
 
 #menu a {
@@ -41,41 +40,64 @@
 }
 
 /* CARROSSEL */
-#carrossel-desktop {
+.container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 90vh;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 100px;
 }
 
-#carrossel-desktop .carrossel a{
+.carrossel{
+    display: flex;
+    transition: 500ms linear; 
+}
+
+.imagem {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
+    text-align: center;
 }
 
-#carrossel-desktop .carrossel a img {
-    filter: grayscale(100%);
+.imagem span {
+    color: #ff7300;
+    font-size: 25px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000;
 }
 
-#carrossel-desktop .carrossel a p {
-    padding-inline: 5px;
-    color: #FF7300;
+.imagem:hover {
+    transform: scale(1.05,  1.05);
+    transition: 300ms linear;
 }
-
 
 /* ARRUMAR JAVASCRIPT */
-#carrossel-desktop .carrossel a p:hover {
-    background: linear-gradient(180deg, rgba(255, 115, 0, 0.00) 67.71%, #FF7300 100%);
+.link-ativo {
     color:#fff;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(255, 115, 0, 0.00) 67.71%, #FF7300 100%);
 }
+
+.backGround1 {
+    background: url(../images/sejaVeterano.png) center/cover no-repeat;
+}
+
+.backGround2 {
+    background: url(../images/jogoAberto.png) center/cover no-repeat;
+}
+
+.backGround3 {
+    background: url(../images/agendamento.png) center/cover no-repeat;
+}
+
+.backGround4 {
+    background: url(../images/contato.png) center/cover no-repeat;
+}
+
 
 /* SEJA UM VETERANO */
 #seja-veterano {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +140,7 @@
 
  /* JOGOS ABERTOS  */
  #jogos-abertos {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +177,7 @@
 
 /* AGENDAMENTO */
 #agendamento {
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: flex;
     align-items: center;
