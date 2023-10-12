@@ -1,5 +1,5 @@
 /* (min-width:481px) */
-@media (max-width:480px){
+@media (min-width:300px) and (max-width:480px){
     #seja-veterano .container-veterano{
         width: 17.25rem;
         height: 17.5rem;
