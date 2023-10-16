@@ -175,6 +175,7 @@
     text-align: center;
     flex-direction: column;
     background: url(../images/sejaveteranowpp.png) center/cover no-repeat;
+    border-top: 1px solid var(--cor-laranja);
 }
 
 #seja-veterano .container-veterano {
@@ -212,6 +213,7 @@
     flex-direction: column;
     display: flex;
     background: url(../images/jogoabertowpp.png) center/cover no-repeat;
+    border-top: 1px solid var(--cor-laranja);
 }
 
 #jogos-abertos .conteudo-jogos-abertos {
@@ -250,6 +252,7 @@
     text-align: center;
     flex-direction: column;
     background: url(../images/agendamentowpp.png) center/cover no-repeat;
+    border-top: 1px solid var(--cor-laranja);
 }
 
 #agendamento .conteudo-agendamento {
@@ -404,7 +407,7 @@ section {
     .carrossel-responsivo {
         display: none;
     }
-    
+
     .container {
         display: flex;
         justify-content: center;
