@@ -339,6 +339,30 @@ section {
     .container {
         display: none;
     }
+    
+    .container-responsivo {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container-responsivo a:nth-child(2), .container-responsivo a:nth-child(3) {
+        display: none;
+    } 
+    
+    .backgroundResponsivo1 {
+        background: url(../images/sejaveteranowpp.png) center/cover no-repeat;
+    }
+    
+    .backgroundResponsivo2 {
+        background: url(../images/jogoabertowpp.png) center/cover no-repeat;
+    }
+    
+    .backgroundResponsivo3 {
+        background: url(../images/agendamentowpp.png) center/cover no-repeat;
+    }
 
     #seja-veterano .container-veterano {
         width: 40.5rem;
@@ -377,6 +401,10 @@ section {
 }
 
 @media (min-width: 992px) {
+    .carrossel-responsivo {
+        display: none;
+    }
+    
     .container {
         display: flex;
         justify-content: center;
