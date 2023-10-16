@@ -3,7 +3,7 @@
         @media (min-width:768px) and (max-width:991px){
             @media (min-width:992px) and (max-width:1199px){ */
 
-@media (max-width:991px){
+/* @media (max-width:991px){
     .carrossel {
         display: none;
     }
@@ -14,4 +14,4 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }
-}
+} */

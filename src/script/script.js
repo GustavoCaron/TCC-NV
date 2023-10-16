@@ -30,9 +30,9 @@ function excluirBG(carrossel){
         carrossel.classList.remove('backGround3')
     }
     
-    if(carrossel.classList.contains('backGround4')) {
-        carrossel.classList.remove('backGround4')
-    }
+    // if(carrossel.classList.contains('backGround4')) {
+    //     carrossel.classList.remove('backGround4')
+    // }
 
 }
 
@@ -52,10 +52,10 @@ function excluirLinkAtivo(tituloCarrossel){
         tituloCarrossel[2].style.color = 'var(--cor-laranja)'
     }
 
-    if(tituloCarrossel[3].classList.contains('link-ativo')){
-        tituloCarrossel[3].classList.remove('link-ativo')
-        tituloCarrossel[3].style.color = 'var(--cor-laranja)'
-    }
+    // if(tituloCarrossel[3].classList.contains('link-ativo')){
+    //     tituloCarrossel[3].classList.remove('link-ativo')
+    //     tituloCarrossel[3].style.color = 'var(--cor-laranja)'
+    // }
 }
 
 function adicionarBG(carrossel, index, tituloCarrossel){
