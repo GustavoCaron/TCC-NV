@@ -17,6 +17,7 @@ imagens.forEach((imagem, index) => {
     })
 })
 
+
 function excluirBG(carrossel){
     if(carrossel.classList.contains('backGround1')) {
         carrossel.classList.remove('backGround1')
@@ -29,11 +30,6 @@ function excluirBG(carrossel){
     if(carrossel.classList.contains('backGround3')) {
         carrossel.classList.remove('backGround3')
     }
-    
-    // if(carrossel.classList.contains('backGround4')) {
-    //     carrossel.classList.remove('backGround4')
-    // }
-
 }
 
 function excluirLinkAtivo(tituloCarrossel){
@@ -51,11 +47,6 @@ function excluirLinkAtivo(tituloCarrossel){
         tituloCarrossel[2].classList.remove('link-ativo')
         tituloCarrossel[2].style.color = 'var(--cor-laranja)'
     }
-
-    // if(tituloCarrossel[3].classList.contains('link-ativo')){
-    //     tituloCarrossel[3].classList.remove('link-ativo')
-    //     tituloCarrossel[3].style.color = 'var(--cor-laranja)'
-    // }
 }
 
 function adicionarBG(carrossel, index, tituloCarrossel){
@@ -63,4 +54,64 @@ function adicionarBG(carrossel, index, tituloCarrossel){
     tituloCarrossel[index].classList.add('link-ativo')
     tituloCarrossel[index].style.color = 'var(--cor-branca)'
 }
+
+carrosselResponsivo = document.querySelector('.carrossel-responsivo')
+linksCarrosselResponsivo = document.querySelectorAll('.link-responsivo')
+
+setInterval(() => {
+    setTimeout(() => {
+        excluirBgResponsivo(carrosselResponsivo)
+        excluirLinkResponsivo(linksCarrosselResponsivo)
+        carrosselResponsivo.classList.add('backgroundResponsivo2')
+        linksCarrosselResponsivo[1].style.display = 'block'
+    }, 2000);
+
+    setTimeout(() => {
+        excluirBgResponsivo(carrosselResponsivo)
+        excluirLinkResponsivo(linksCarrosselResponsivo)
+        carrosselResponsivo.classList.add('backgroundResponsivo3')
+        linksCarrosselResponsivo[2].style.display = 'block'
+    }, 3000);
+
+    setTimeout(() => {
+        excluirBgResponsivo(carrosselResponsivo)
+        excluirLinkResponsivo(linksCarrosselResponsivo)
+        carrosselResponsivo.classList.add('backgroundResponsivo1')
+        linksCarrosselResponsivo[0].style.display = 'block'
+    }, 4000);
+
+}, 4000);
+
+function excluirBgResponsivo(carrosselResponsivo){
+    if(carrosselResponsivo.classList.contains('backgroundResponsivo1')) {
+        carrosselResponsivo.classList.remove('backgroundResponsivo1')
+    }
+
+    if(carrosselResponsivo.classList.contains('backgroundResponsivo2')) {
+        carrosselResponsivo.classList.remove('backgroundResponsivo2')
+    }
+
+    if(carrosselResponsivo.classList.contains('backgroundResponsivo3')) {
+        carrosselResponsivo.classList.remove('backgroundResponsivo3')
+    }
+}
+
+function excluirLinkResponsivo(linksCarrosselResponsivo){
+    if(linksCarrosselResponsivo[0].style.display !== 'none'){
+        linksCarrosselResponsivo[0].style.display = 'none'
+    }
+
+    if(linksCarrosselResponsivo[1].style.display !== 'none'){
+        linksCarrosselResponsivo[1].style.display = 'none'
+    }
+
+    if(linksCarrosselResponsivo[2].style.display !== 'none'){
+        linksCarrosselResponsivo[2].style.display = 'none'
+    }
+}
+
+
+
+
+ 
 
