@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(180deg, #292929 40.32%, #FF7300 100%);
+    background-size: auto;
+    height: 100vh;
+    color: #FF7300;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+}
+
+header a:nth-child(2){
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+header a:nth-child(2):hover{
+    color: #ff7300;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ff7300;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.container form #username{
+    border-radius: 75px;
+    border: none;
+    padding: 2px 25px;
+}
+
+.container form button {
+    margin-top: 20px;
+    transition: 0.3s ease-in;
+    padding: 5px 15px;
+    border-radius: 75px;
+    border: 1px solid #fff;
+    color: #FF7300;
+    background-color: #292929;
+    cursor: pointer;
+}
+
+.container form button:hover {
+    border: 1px solid #FF7300;
+    color: #fff;
+}
+
+@media (max-width: 475px){
+    header {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+
+
