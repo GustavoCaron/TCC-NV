@@ -14,20 +14,24 @@
         </a>
     </header>
     <div class="container">
-        <div class="container-infos">
-            <p>FAÇA LOGIN PARA ACESSAR SUA CONTA</p>
-            <a href="./cadastro.html">Ainda não tenho uma conta</a>
+        <div class="main-container">
+            <div class="container-infos">
+                <p>FAÇA LOGIN PARA ACESSAR SUA CONTA</p>
+                <a href="./cadastro.html">Ainda não tenho uma conta</a>
+            </div>
+            <div class="container-login">
+                <p>LOGIN</p>
+                <form action="/login" method="post">
+                    <input id="email" type="text" placeholder="DIGITE SEU E-MAIL" name="username">
+                    <input id="senha" type="password" placeholder="DIGITE SUA SENHA" name="password">
+                    <button>LOGIN</button>
+                </form>
+                <a href="esqueceuSenha.html">Esqueci a Senha</a>
+                <a href="./cadastro.html" class="botao-cadastro">Ainda não tenho uma conta</a>
+            </div>
         </div>
-        <div class="container-login">
-            <p>LOGIN</p>
-            <form action="/login" method="post">
-                <input id="email" type="text" placeholder="DIGITE SEU E-MAIL" name="username">
-                <input id="senha" type="password" placeholder="DIGITE SUA SENHA" name="password">
-                <button>LOGIN</button>
-            </form>
-            <a href="esqueceuSenha.html">Esqueci a Senha</a>
-            <a href="./cadastro.html" class="botao-cadastro">Ainda não tenho uma conta</a>
-        </div>
+        <a href="../HTML/loginAdm.html" class="botao-cadastro">Fazer Login como Administrador</a>
     </div>
 </body>
 </html>
+
