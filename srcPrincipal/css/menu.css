@@ -7,6 +7,24 @@
     max-height: 5.9rem;
 }
 
+/* MENU DESKTOP */
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#menu ul li a {
+    padding: 20px;
+}
+
+#menu ul li a:hover {
+    color: var(--cor-laranja);
+}
+
+
+/* DEFININDO TAMANHO E ONDE O MENU RESPONSIVO FICARÁ */
 #menu .menu {
     display: none;
     align-self: flex-end;
@@ -19,6 +37,7 @@
     flex-direction: column;
 }
 
+/* DEFINIRÁ RISCO CENTRAL ASSIM COMO LARGURA, ALTURA E A COR */
 #menu .hamburguer {
     background-color: var(--cor-laranja);
     position: relative;
@@ -30,6 +49,7 @@
     transition: 0.2s ease-in-out;
 }
 
+/* DEFINIRÁ OS RISCOS DE CIMA E DE BAIXO ASSIM COMO LARGURA, ALTURA E A COR */
 #menu .hamburguer:before,
 #menu .hamburguer:after {
     background-color: var(--cor-laranja);
@@ -41,6 +61,7 @@
     transition: 0.5s ease-in-out;
 }
 
+/* DEFINIRÁ O LOCAL QUE VAO SE ENCONTRAR O SPAN */
 #menu .hamburguer:before {
     top: -10px;
 }
@@ -49,10 +70,12 @@
     bottom: -10px;
 }
 
+/* RETIRAR O INPUT */
 #menu input {
     display: none;
 }
 
+/* ROTACAO DAS LINHAS DO MENU */
 #menu input:checked ~ label .hamburguer {
     transform: rotate(45deg);
 }
@@ -67,60 +90,45 @@
     bottom: 0;
 }
 
-#menu ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-#menu ul li a {
-    padding: 20px;
-    border-radius: 75px;
-}
-
-#menu ul li a:nth-child(2){
-    background-color: var(--cor-laranja);
-}
-
-#menu ul li a:hover {
-    color: var(--cor-laranja);
-}
-
 @media(max-width: 900px){
+    /* FARÁ O MENU RESPONSIVO APARECER */
     #menu .menu {
         display: block;
     }
 
+    /* FARÁ O MENU DESKTOP DESAPARECER */
     #menu nav ul {
         display: none;
     }
 
+    /* SE O INPUT FOR VERIFICADO, MOSTRARÁ A LISTA DE MENU */
     #menu input:checked ~ ul {
         display: block;
     }
 
+    /* POSICIONARÁ O NAV E NA TELA */
     #menu nav {
         position: absolute;
         top: 8px;
-        right: 20px;
         z-index: 1;
         right: 20px;
     }
 
+    /* DEFINIRÁ ESTILO DA LISTA DE MENU */
     #menu nav ul {
         width: 200px;
-        background-color: var(--cor-acizentada);
         padding: 5px;
         background-color: var(--cor-laranja);
     }
 
-    #menu nav ul a{
+    /* CENTRALIZARÁ O TEXTO DO MENU E TRARÁ EM FORMA DE BLOCOS */
+    #menu nav ul a {
         text-align: center;
         padding: 20px;
         display: block;
     }
 
+    /* ESTILIZAÇAO BG DOS ITENS DO MENU */
     #menu nav ul li:nth-child(1){
         background-image: url('../images/jogosAbertosMenu.png');
     }
