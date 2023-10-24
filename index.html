@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="srcPrincipal/css/reset.css">
+    <link rel="stylesheet" href="srcPrincipal/css/menu.css">
     <link rel="stylesheet" href="srcPrincipal/css/variables.css">
-    <link rel="stylesheet" href="srcPrincipal/css/estilo.css">
+    <link rel="stylesheet" href="srcPrincipal/css/style.css">
+    <link rel="stylesheet" href="srcPrincipal/css/responsive.css">
+
 </head>
 <body> 
     <header id="menu">
@@ -26,8 +29,8 @@
             </label>
 
             <ul>
-                <li><a href="#seja-veterano">SEJA UM VETERANO</a></li>
                 <li><a href="#jogos-abertos">JOGOS ABERTOS</a></li>
+                <li><a href="#arena">ARENA</a></li>
                 <li><a href="#agendamento">AGENDAMENTO</a></li>
                 <li><a href="src/HTML/login.html" class="botao-login">LOGIN</a></li>
             </ul>
@@ -38,65 +41,64 @@
         <div class="container backGround1">
             <div class="carrossel">
                 <div class="imagem">
-                    <a href="#seja-veterano">
-                        <img src="srcPrincipal/images/sejaVeterano.png" alt="Seja um veterano">
-                    </a>
-                    <span class="titulo-carrossel">SEJA UM VETERANO</span>
-                </div>
-    
-                <div class="imagem">
                     <a href="#jogos-abertos">
-                        <img src="srcPrincipal/images/jogoAberto.png" alt="Jogos Abertos">
+                        <img src="srcPrincipal/images/jogosAbertosCarrossel.png" alt="Jogos Abertos">
                     </a>
                     <span class="titulo-carrossel">JOGOS ABERTOS</span>
+                </div>
+
+                <div class="imagem">
+                    <a href="#arena">
+                        <img src="srcPrincipal/images/arenaCarrossel.png" alt="arena">
+                    </a>
+                    <span class="titulo-carrossel">ARENA</span>
                 </div>
     
                 <div class="imagem">
                     <a href="#agendamento">
-                        <img src="srcPrincipal/images/agendamento.png" alt="Agende um Horário">
+                        <img src="srcPrincipal/images/agendamentoCarrossel.png" alt="Agende um Horário">
                     </a>
                     <span class="titulo-carrossel">AGENDE UM HORÁRIO</span>
                 </div>
             </div> 
-        </div>
+        </div> 
 
         <div class="carrossel-responsivo backgroundResponsivo1">
             <div class="container-responsivo">
-                <a href="#seja-veterano" class="link-responsivo">SEJA VETERANO</a>
                 <a href="#jogos-abertos" class="link-responsivo">JOGOS ABERTOS</a>
+                <a href="#arena" class="link-responsivo">ARENA</a>
                 <a href="#agendamento" class="link-responsivo">AGENDAMENTO</a>
             </div>
         </div>
-
-        <section id="seja-veterano">
-            <h1 class="titulo">SEJA UM VETERANO</h1>
-            <div class="container-veterano">
-                <div class="info">
-                    <ul>
-                        <li>Participe de sorteios</li>
-                        <li>Acesso aos Jogos Abertos</li>
-                        <li>Brindes exclusivos</li>
-                    </ul>
-                </div>
-                <div class="preco">
-                    <p><span>R$</span>299</p>
-                </div>
-            </div>
-        </section>
 
         <section id="jogos-abertos">
             <h1 class="titulo">JOGOS ABERTOS</h1>
             <div class="conteudo-jogos-abertos">
                 <div class="container-jogos-abertos">
-                    <p>MANHÃ</p>
-                    <span>SÁBADOS</span>
-                    <span>09 HORAS</span>
+                    <h3 class="titulo">MANHÃ</h3>
+                    <p>SÁBADOS</p>
+                    <p>09 HORAS</p>
                 </div>
     
                 <div class="container-jogos-abertos">
-                    <p>NOITE</p>
-                    <span>SEXTAS-FEIRAS</span>
-                    <span>20 HORAS</span>
+                    <h3 class="titulo">NOITE</h3>
+                    <p>SEXTAS-FEIRAS</p>
+                    <p>20 HORAS</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="arena">
+            <h1 class="titulo">ARENA</h1>
+            <div class="container-arena">
+                <div class="container-jogo">
+                    <h3 class="titulo">DEATHMATCH</h3>
+                    <p>Elimine o time inimigo no clássico <br>Mata-Mata</p>
+                </div>
+
+                <div class="container-jogo">
+                    <h3 class="titulo">CAPTURE THE FLAG</h3>
+                    <p>Capture a bandeira do adversário para vencer essa batalha</p>
                 </div>
             </div>
         </section>
@@ -105,21 +107,21 @@
             <h1 class="titulo">AGENDAMENTO</h1>
             <div class="conteudo-agendamento">
                 <div class="container-agendamento">
-                    <h3>EQUIPAMENTO</h3>
+                    <h3 class="titulo">EQUIPAMENTO</h3>
                     <p>Máscara</p>
                     <p>Óculos</p>
                     <p>Colete</p>
                 </div>
     
                 <div class="container-agendamento">
-                    <h3>ARMAMENTO</h3>
+                    <h3 class="titulo">ARMAMENTO</h3>
                     <p>M4A4</p>
                     <p>AK47</p>
                     <p>M4A1</p>
                 </div>
     
                 <div class="container-agendamento">
-                    <h3>VALORES</h3>
+                    <h3 class="titulo">VALORES</h3>
                     <p>R$90 p/ JOGO</p>
                     <p>MUNIÇÃO ILIMITADA</p>
                 </div>
@@ -165,7 +167,7 @@
             </div>
         </div>
     </footer>
-    
-    <script src="src/script/script.js"></script>
+
+    <script src="srcPrincipal/script/script.js"></script>
 </body>
 </html>
